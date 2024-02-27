@@ -1,0 +1,41 @@
+@keyframes slidein {
+  from {
+    transform: translateX(15vw);
+  }
+  to {
+    transform: translateX(40vw);
+  }
+}
+
+.loading {
+  font-weight: 900;
+  font-size: 4rem;
+  margin-top: 25%;
+  text-align: center;
+  background-color: orange;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(
+    148deg,
+    rgba(251, 139, 19, 1) 0%,
+    rgba(249, 231, 29, 1) 76%
+  );
+}
+
+.loading_square {
+  margin-top: 10px;
+  width: 0.7rem;
+  height: 0.7rem;
+  background: linear-gradient(
+    148deg,
+    rgba(251, 139, 19, 1) 0%,
+    rgba(249, 231, 29, 1) 76%
+  );
+  animation: 2s linear 0s infinite alternate slidein;
+}
+
+@media (max-width: 320px) {
+  .loading {
+    font-size: 3rem;
+  }
+}

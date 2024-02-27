@@ -1,0 +1,13 @@
+.currency {
+  font-size: 12px;
+}
+.currencyWidget {
+  display: flex;
+  margin-top: 3px;
+}
+
+@media (max-width: 903px) {
+  .currencyWidget {
+    flex-direction: column;
+  }
+}

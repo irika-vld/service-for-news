@@ -1,0 +1,63 @@
+@import "../../styles/variable.scss";
+
+.pagination {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+
+  .list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+  }
+
+  .pageNumber {
+    padding: 8px;
+  }
+
+  .arrow {
+    padding: 4px;
+  }
+  .pageNumber,
+  .arrow {
+    border: none;
+    cursor: pointer;
+  }
+
+  .pageNumber:disabled,
+  .arrow:disabled {
+    cursor: default;
+    color: $color-accent-yellow !important;
+  }
+}
+
+.list.dark {
+  background-color: $background-color-dark-black;
+}
+
+.list.light {
+  background-color: $background-color-light-pink;
+}
+
+.pagination.dark .pageNumber,
+.pagination.dark .arrow {
+  border-radius: 10px;
+  background-color: $background-color-dark-black;
+  color: #f6f7f9;
+}
+
+.pagination.light .pageNumber,
+.pagination.light .arrow {
+  border-radius: 10px;
+  background-color: $background-color-light-pink;
+  color: black;
+}
+
+@media (max-width: 320px) {
+  .arrow {
+    display: none;
+  }
+}

@@ -1,0 +1,55 @@
+@import '../../styles/variable.scss';
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 8px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+
+  &Item,
+  &Active {
+    padding: 8px;
+    border: none;
+    border-radius: 32px;
+    cursor: pointer;
+  }
+
+  &Item:hover {
+    opacity: 0.8;
+  }
+
+  &Active {
+    background-color: $background-color-light;
+    color: $color-accent-yellow;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.categoriesItem.dark {
+  background-color: $background-color-dark-black;
+  color: #f2f4f5;
+}
+
+.categoriesItem.light {
+  background-color: $background-color-light-pink;
+}
+
+.categoriesActive.dark {
+  background-color: $background-color-dark;
+}
+
+.categoriesActive.light {
+  background-color: $background-color-light;
+}
+
+@media (max-width: 965px) {
+  .categories {
+    flex-wrap: nowrap;
+  }
+}

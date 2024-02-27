@@ -1,0 +1,139 @@
+@import "../../styles/variable.scss";
+
+.container {
+  position: fixed;
+  top: 25%;
+  left: 30%;
+  width: 40vw;
+  height: 60vh;
+  padding: 30px;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.content {
+  border: 1px solid black;
+  padding: 30px;
+  height: 100%;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.text {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2.5;
+}
+
+.textFinish {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2.5;
+  padding: 0 40px;
+}
+
+.startBtn {
+  width: 150px;
+  height: 32px;
+  border-radius: 32px;
+  background-color: $color-accent-yellow;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  width: 2vw;
+  height: 4vh;
+  border: none;
+  background-color: $color-accent-yellow;
+  opacity: 0.7;
+  border-radius: 32px;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1024px) {
+  .closeBtn {
+    width: 3vw;
+    height: 4vh;
+  }
+
+  .text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+}
+
+@media (max-width: 768px) {
+  .closeBtn {
+    width: 4vw;
+  }
+
+  .container {
+    width: 50vw;
+  }
+}
+
+@media (max-width: 640px) {
+  .closeBtn {
+    width: 4vw;
+  }
+
+  .container {
+    width: 60vw;
+    left: 17%;
+  }
+}
+
+@media (max-width: 480px) {
+  .closeBtn {
+    width: 5vw;
+    height: 3vh;
+    top: 2%;
+    right: 2%;
+  }
+
+  .container {
+    width: 65vw;
+    left: 17%;
+  }
+
+  .content {
+    padding: 15px;
+  }
+
+  .textFinish {
+    padding: 0 10px;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 30px 10px 20px;
+    width: 70vw;
+  }
+
+  .text {
+    font-size: 0.9rem;
+  }
+
+  .startBtn {
+    max-width: 130px;
+    width: 100%;
+    height: 26px;
+  }
+}

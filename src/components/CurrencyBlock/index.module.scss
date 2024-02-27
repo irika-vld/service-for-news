@@ -1,0 +1,55 @@
+@import "../../styles/variable.scss";
+
+.block {
+  margin-right: 10px;
+}
+
+.currency {
+  display: flex;
+  gap: 4px;
+}
+
+.arrow {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3px;
+}
+
+.input {
+  max-width: 200px;
+  min-width: 120px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.248);
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 3px 3px 3px 5px;
+  margin: 6px 0 3px 0;
+  font-size: 12px;
+  &:focus {
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.248);
+  }
+  &::placeholder {
+    padding: 3px;
+    font-size: 12px;
+    color: black;
+  }
+}
+
+.curBlock {
+  cursor: pointer;
+  padding: 2px;
+  &:hover {
+    color: $color-accent-yellow;
+  }
+}
+
+.active {
+  background-color: $color-accent-yellow;
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 3px;
+}

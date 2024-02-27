@@ -1,0 +1,44 @@
+@import '../../styles/variable.scss';
+
+.slider {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 8px;
+
+  &Arrow {
+    border: none;
+    background-color: white;
+    padding: 4px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+  }
+}
+
+.sliderArrow:disabled {
+  cursor: default;
+  color: $background-color-light !important;
+}
+
+.slider.dark .sliderArrow {
+  background-color: $background-color-dark-black;
+  color: #f6f7f9;
+}
+
+.slider.light .sliderArrow {
+  background-color: $background-color-light-pink;
+  color: black;
+}
+
+@media (max-width: 965px) {
+  .sliderArrow {
+    display: block;
+  }
+}
+
+@media (max-width: 320px) {
+  .sliderArrow {
+    display: none;
+  }
+}

@@ -1,0 +1,43 @@
+@import "../../styles/variable.scss";
+
+.item {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  padding: 5px;
+  margin-bottom: 20px;
+  border-radius: $border-radius-for-news;
+
+  &Info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    &Title {
+      font-size: 14px;
+    }
+
+    &Extra {
+      font-size: 12px;
+      color: #6c7872;
+    }
+  }
+
+  &Wrapper {
+    width: 64px;
+    height: 64px;
+    background-color: #f2f4f5;
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0;
+    border-radius: $border-radius-for-news;
+  }
+}
+
+.item.dark {
+  background-color: $background-color-dark-black;
+}
+
+.item.light {
+  background-color: $background-color-light-pink;
+}

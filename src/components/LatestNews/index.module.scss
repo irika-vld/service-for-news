@@ -1,0 +1,40 @@
+@import '../../styles/variable.scss';
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 16px;
+  align-items: center;
+  border-radius: $border-radius-for-news;
+  padding: 5px;
+
+  p {
+    margin-bottom: 15px;
+  }
+}
+
+.section.dark {
+background-color: $background-color-dark-black;
+}
+
+.section.light {
+  background-color: $background-color-light-pink;
+}
+
+.button {
+  width: 150px;
+  height: 32px;
+  border-radius: 32px;
+  background-color: $color-accent-yellow;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .button {
+    display: block;
+  }
+}

@@ -1,0 +1,27 @@
+@import '../../styles/variable.scss';
+
+.search {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  border-radius: 12px;
+
+  &Input {
+    width: 100%;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 12px;
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+.searchInput.dark {
+  background-color: $background-color-dark-black;
+  color: #f6f7f9;
+}
+
+.searchInput.light {
+  background-color: $background-color-light-pink;
+}
